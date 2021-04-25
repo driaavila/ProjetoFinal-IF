@@ -3,7 +3,7 @@
 @section('title', 'Restaurante Universitário')
 
 @section('content')
-  
+
  <table class="table">
     <thead>
         <tr>
@@ -15,15 +15,15 @@
     </thead>
     <tbody>
     @if($cardapios)
-    @foreach($cardapios as $cardapio)
+        @foreach($cardapios as $cardapio)
     <tr>    
-      <th scope="row">{{ $cardapio->dia_semana }}</th>
+      <th>{{ $cardapio->dia_semana }}</th>
       <td>{{ $cardapio->cafe }}</td>
       <td>{{ $cardapio->almoco }}</td>
       <td>{{ $cardapio->jantar }}</td>
     </tr>
-    @endforeach
-@endif
+        @endforeach
+    @endif
     </body>
 
    </table>

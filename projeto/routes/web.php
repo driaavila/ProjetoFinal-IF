@@ -17,3 +17,4 @@ use App\Http\Controllers\CardapioController;
 
 Route::get('/', [CardapioController::class, 'index']);
 Route::get('/cardapio/create', [CardapioController::class, 'create']);
+Route::post('/cardapio', [CardapioController::class, 'store']);
