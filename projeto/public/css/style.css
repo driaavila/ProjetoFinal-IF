@@ -119,11 +119,22 @@ header{
     text-align: center;
     background-color: rgb(55, 185, 23);
     color: #fff;
-    padding: 10px;
-    position: relative;
+    padding: 15px;
+    position: absolute;
     bottom: 0;
+    width: 100%;
+    
 }
 
 .footer p {
-    margin: 10px;
+    margin: 9px;
+}
+
+
+/*Informações*/
+.corpo-table table {
+    width: 600px;
+    margin-left: 325px ;
+    margin-top: 50px;
+    
 }

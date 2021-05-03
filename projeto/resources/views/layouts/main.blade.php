@@ -30,6 +30,9 @@
             <a href="/" class="nav-link">Cardápios</a>
             </li>
             <li class="nav-item">
+            <a href="/cardapio/info" class="nav-link">Informações</a>
+            </li>
+            <li class="nav-item">
             <a href="/cardapio/create" class="nav-link">Criar Cardápio</a>
             </li>
             <li class="nav-item">

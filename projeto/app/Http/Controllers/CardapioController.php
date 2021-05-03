@@ -19,7 +19,6 @@ class CardapioController extends Controller
         return view('cardapio.create');
     }
 
-
     public function store(Request $request) {
         $cardapios = new Cardapio;
 
