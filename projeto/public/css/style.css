@@ -1,0 +1,140 @@
+* {
+    font-family: 'Roboto';
+}
+
+body{
+    min-height: 100wh;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.row{
+    margin: 0;
+}
+
+/* mensagem */
+.msg{
+    background-color: #D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6CB;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+/* botão */
+.btn-primary{
+    background-color:rgb(55, 185, 23);
+    border: 2px solid green;
+    margin-top: 20px;
+}
+
+.btn-primary:hover{
+    background-color: green;
+    border-color: green;
+}
+
+/* Menu */
+#navbar img{
+    width: 150px;
+    margin-left: 20px;
+}
+
+#navbar {
+    justify-content: space-between;
+    background-color: rgb(55, 185, 23);
+    padding: 5px 0;
+}
+
+#navbar a{
+    font-size: 16px ;
+    color: #f0e9e9;
+}
+
+#navbar a:hover{
+    color: green;
+}
+
+/* Imagem */
+#container {
+    background-image: url("../img/ru.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    padding: 100px;
+    text-align: center;  
+}
+
+#container h1{
+    color:  rgb(55, 185, 23);
+    margin-bottom: 50px;
+    font-weight: 900;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 50px;
+}
+
+/* criar cardápio */
+#cardapios-create-container {
+    padding: 30px;
+}
+
+#cardapios-create-container h1 {
+    font-size: 40px;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    color: rgb(55, 185, 23);
+  
+}
+
+#cardapios-create-container label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+  
+  #cardapios-create-container select,
+  #cardapios-create-container textarea {
+    font-size: 12px;
+  }
+
+/* tabela */
+.table {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.table tr{
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+/* footer */
+.footer{
+    text-align: center;
+    background-color: rgb(55, 185, 23);
+    color: #fff;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.footer p {
+    margin: 9px;
+}
+
+
+/*Informações*/
+.corpo-table table {
+    width: 600px;
+    margin-left: 325px ;
+    margin-top: 50px;
+    
+}
