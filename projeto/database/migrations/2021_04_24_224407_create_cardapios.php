@@ -20,6 +20,8 @@ class CreateCardapios extends Migration
             $table->text('cafe');
             $table->text('almoco');
             $table->text('jantar');
+            $table->text('almoco_veg');
+            $table->text('jantar_veg');
         });
     }
 

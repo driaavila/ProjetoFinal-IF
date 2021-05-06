@@ -98,10 +98,18 @@ header{
     margin-top: 10px;
 }
   
-  #cardapios-create-container select,
-  #cardapios-create-container textarea {
+#cardapios-create-container select,
+#cardapios-create-container textarea {
     font-size: 12px;
-  }
+}
+
+#reserva-create-container input {
+    padding: 10px;;
+}
+
+#reserva-create-container label {
+    padding: 10px;;
+}
 
 /* tabela */
 .table {

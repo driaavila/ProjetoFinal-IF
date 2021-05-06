@@ -20,3 +20,9 @@ Route::get('/cardapio/info', [CardapioController::class, 'info']);
 Route::get('/cardapio/create', [CardapioController::class, 'create']);
 Route::post('/cardapio', [CardapioController::class, 'store']);
 
+
+Route::get('/cardapio/reserva', [CardapioController::class, 'reserva'])->middleware('auth');
+
+Route::post('/reserva', [CardapioController::class, 'dash']);
+
+Route::get('/dashboard', [CardapioController::class, 'dashboard'])->middleware('auth');

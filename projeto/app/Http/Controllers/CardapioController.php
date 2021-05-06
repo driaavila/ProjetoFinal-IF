@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Models\Cardapio;
+use App\Models\Reserva;
 
 class CardapioController extends Controller
 {
@@ -19,6 +20,17 @@ class CardapioController extends Controller
         return view('cardapio.create');
     }
 
+    public function reserva(){
+        return view('cardapio.reserva');
+    }
+
+    public function dashboard(){
+
+        $reservas = Reserva::all();
+
+        return view('cardapio.dashboard',['reservas' => $reservas]);
+    }
+
     public function info(){
         return view('cardapio.info');
     }
@@ -29,11 +41,24 @@ class CardapioController extends Controller
         $cardapios->dia_semana = $request->dia_semana;
         $cardapios->cafe = $request->cafe;
         $cardapios->almoco = $request->almoco;
+        $cardapios->almoco_veg = $request->almoco_veg;
         $cardapios->jantar = $request->jantar;
+        $cardapios->jantar_veg = $request->jantar_veg;
 
         $cardapios->save();
 
         return redirect('/')->with('msg', 'Cardápio cadastrado com sucesso!');
+    }
+
+    public function dash(Request $request) {
+        $reservas = new Reserva;
+
+        $reservas->dia_semana = $request->dia_semana;
+        $reservas->vegetariano = $request->vegetariano;
+        
+        $reservas->save();
+
+        return redirect('/dashboard')->with('msg', 'Reserva realizada com sucesso!');
     }
 
 }

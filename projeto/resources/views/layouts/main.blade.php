@@ -32,15 +32,36 @@
             <li class="nav-item">
             <a href="/cardapio/info" class="nav-link">Informações</a>
             </li>
+            @auth 
             <li class="nav-item">
-            <a href="/cardapio/create" class="nav-link">Criar Cardápio</a>
+                <a href="dashboard" class="nav-link">Reservas</a>
             </li>
+            
             <li class="nav-item">
-            <a href="/" class="nav-link">Entrar</a>
+                <a href="/cardapio/reserva" class="nav-link">Fazer Reserva</a>
             </li>
+
             <li class="nav-item">
-            <a href="/" class="nav-link">Cadastrar </a>
-            </li>      
+                <form action="/logout" method="POST">
+                @csrf
+                <a href="/logout" 
+                    class="nav-link" 
+                    onclick="event.preventDefault(); 
+                    this.closest('form').submit();">
+                Sair
+                </a>
+                </form>         
+                
+            </li>
+            @endauth
+            @guest
+                <li class="nav-item">
+                <a href="/login" class="nav-link">Entrar</a>
+                </li>
+                <li class="nav-item">
+                <a href="/register" class="nav-link">Cadastrar </a>
+                </li>
+            @endguest      
         
          </ul>         
          </div>

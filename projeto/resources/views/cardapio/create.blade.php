@@ -8,6 +8,7 @@
     <h1>Cadastre o Cardápio do dia</h1>
     <form action="/cardapio" method="POST" enctype="multipart/form-data">
         @csrf
+
         <div class="form-group">
         <label for="title">Dia da Semana (selecione o dia):</label>
         <select name="dia_semana" id="dia_semana" class="form-control">
@@ -27,10 +28,22 @@
             <label for="title">Almoço:</label>
             <textarea name="almoco" id="almoco" class="form-control" placeholder="Insira o cardápio do Almoço"></textarea>
         </div>
+
+        <div class="form-group">
+            <label for="title">Almoço Vegetariano:</label>
+            <textarea name="almoco_veg" id="almoco_veg" class="form-control" placeholder="Insira o cardápio do Almoço Vegetariano"></textarea>
+        </div>
+
         <div class="form-group">
             <label for="title">Jantar:</label>
             <textarea name="jantar" id="jantar" class="form-control" placeholder="Insira o cardápio do Jantar"></textarea>
         </div>
+
+        <div class="form-group">
+            <label for="title">Jantar Vegetariano:</label>
+            <textarea name="jantar_veg" id="jantar_veg" class="form-control" placeholder="Insira o cardápio do Jantar Vegetariano"></textarea>
+        </div>
+
         <input type="submit" class="btn btn-primary" value="Cadastrar Cardápio">
     </form>
 </div>
