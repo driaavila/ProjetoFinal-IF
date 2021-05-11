@@ -55,10 +55,20 @@ class CardapioController extends Controller
 
         $reservas->dia_semana = $request->dia_semana;
         $reservas->vegetariano = $request->vegetariano;
+        $reservas->opcao = $request->opcao;
+
+        $user = auth()->user();
+        $reservas->user_id = $user->id;
         
         $reservas->save();
 
         return redirect('/dashboard')->with('msg', 'Reserva realizada com sucesso!');
     }
 
+    public function destroy($id){
+        
+        Reserva::findOrFail($id)->delete();
+
+        return redirect('/dashboard')->with('msg', 'Reserva excluída com sucesso!');
+    }
 }

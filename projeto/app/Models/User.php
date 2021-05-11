@@ -58,4 +58,13 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+
+    public function reservas() {
+        return $this->hasMany('App\Models\Reserva');
+    }
+
+    public function reser(){
+        return $this->belongstoMany('App\Models\Reserva');
+    }
 }

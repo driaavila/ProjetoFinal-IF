@@ -38,7 +38,7 @@
             </li>
             
             <li class="nav-item">
-                <a href="/cardapio/reserva" class="nav-link">Fazer Reserva</a>
+                <a href="/reserva" class="nav-link">Fazer Reserva</a>
             </li>
 
             <li class="nav-item">

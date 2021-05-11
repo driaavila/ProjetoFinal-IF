@@ -18,17 +18,17 @@
 
  <td class="table-info text-success">Café</td>   
 <td class="table-info text-success"> 07:00 ás 09:30</td>
-<td class="table-info text-success"> R$10,00</td>
+<td class="table-info text-success"> R$2,50</td>
 </tr>
 <tr>
 <td class="table-info text-success ">Almoço</td>
 <td class="table-info text-success"> 11:30 ás 13:30</td>
-<td class="table-info text-success">R$15,00</td>
+<td class="table-info text-success">R$5,00</td>
 </tr>
 <tr>
 <td class="table-info text-success">Jantar</td>
  <td class="table-info text-success"> 18:30 ás 20:30</td>
- <td class="table-info text-success">R$13,00</td>          
+ <td class="table-info text-success">R$4,50</td>          
    </tr>
 </table>
 </div>

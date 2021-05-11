@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Reservas')
+@section('title', 'Fazer Reservas')
 
 @section('content')
 
@@ -16,6 +16,15 @@
             <option>Quarta-Feira</option>
             <option>Quinta-Feira</option>
             <option>Sexta-Feira</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+        <label for="title">Opção (selecione a refeição):</label>
+        <select name="opcao" id="opcao" class="form-control">
+            <option>Café</option>
+            <option>Almoço</option>
+            <option>Jantar</option>
         </select>
         </div>
 
